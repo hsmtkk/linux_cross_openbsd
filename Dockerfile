@@ -8,7 +8,7 @@ RUN apt-get -y update \
 ADD vendor/binutils-2.36.1.tar.xz /usr/local/src
 ADD vendor/gcc-10.2.0.tar.xz /usr/local/src/
 ADD vendor/base68.tgz /opt
-ADD vendor/comp.tgz /opt
+ADD vendor/comp68.tgz /opt
 
 WORKDIR /usr/local/src/binutils-2.36.1
 
