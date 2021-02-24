@@ -27,6 +27,8 @@ RUN ./contrib/download_prerequisites \
 
 WORKDIR /usr/local/src/objdir
 
+COPY patch/gcc/config/t-openbsd /usr/local/src/gcc-10.2.0/gcc/config/t-openbsd
+
 RUN ../gcc-10.2.0/configure \
  --disable-multilib \
  --enable-languages=c,c++ \
